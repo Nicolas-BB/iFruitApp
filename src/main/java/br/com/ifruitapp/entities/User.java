@@ -1,4 +1,4 @@
-package br.com.amanda.ifruitapp.entity;
+package br.com.ifruitapp.entities;
 
 import jakarta.persistence.*;
 
