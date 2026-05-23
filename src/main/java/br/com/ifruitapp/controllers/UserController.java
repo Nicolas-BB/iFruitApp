@@ -1,7 +1,5 @@
 package br.com.ifruitapp.controllers;
 
-import java.util.List;
-
 import org.springframework.web.bind.annotation.*;
 
 import br.com.ifruitapp.entities.User;
@@ -21,7 +19,7 @@ public class UserController {
     }
 
     @GetMapping("/user/list-users")
-    public List<User> getAllUsers() {
+    public Iterable<User> getAllUsers() {
         return userService.getAllUsers();
     }
 

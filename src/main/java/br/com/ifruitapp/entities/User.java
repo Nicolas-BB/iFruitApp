@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "tbl_user")
 public class User {
-    private static final long serialVersionUID = 1L;
+    // private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +13,10 @@ public class User {
     private String name;
     private String email;
     private String cpf;
+
+    public User() {
+    
+    }
 
     public User(Integer id, String name, String email, String cpf) {
         this.id = id;
